@@ -52,3 +52,16 @@ export default tseslint.config({
   },
 })
 ```
+
+## Backend
+
+The `backend` directory contains a small Express server connected to Postgres and the Gemini API. After running `npm install`, start the server with:
+
+```bash
+npm start
+```
+
+Set `DATABASE_URL` for Postgres and `GEMINI_API_KEY` for AI-based recommendations in a `.env` file.
+
+The server provides a `/api/recommendations` endpoint used by the front-end app.
+See [gemini.md](gemini.md) for more details on using the Gemini model.
